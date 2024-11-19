@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Alchemia by Miłosz Sowa - Fullstack Web Developing</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Nawigacja -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.imgur.com/A3K2RQE.png" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">O mnie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Usługi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Nagłówek z tłem -->
+    <header class="hero-1 bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Portfolio</h1>
+<p>Zobacz moje wcześniejsze realizacje</p>
+        </div>
+    </header>
+
+<!-- Sekcja Portfolio -->
+<section id="portfolio" class="portfolio-section py-5">
+    <div class="container">
+        <!-- 1. Nagłówek z opisem -->
+        <h1 class="portfolio-section section-header text-center mb-3">Moje realizacje</h1>
+
+        <div style="margin-bottom: 30px;"></div>
+        
+        <div class="card no-hover">
+            <div class="card-body">
+                <p class="card-text">Oto wybrane projekty, nad którymi pracowałem. Zobacz, jak pomogłem moim klientom osiągnąć sukces w sieci. Każdy projekt jest unikalny i dostosowany do potrzeb klienta.</p>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 50px;"></div>
+        
+        <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+        <div style="margin-bottom: 30px;"></div>
+        
+        <!-- 5. Filtrowanie projektów (Rozbudowane filtry) -->
+        <div class="portfolio-section text-center mb-4">
+            <button class="portfolio-section btn btn-outline-primary m-1" onclick="filterProjects('all')">Wszystkie</button>
+            <button class="portfolio-section btn btn-outline-primary m-1" onclick="filterProjects('ecommerce')">E-commerce</button>
+            <button class="portfolio-section btn btn-outline-primary m-1" onclick="filterProjects('webapp')">Aplikacje Webowe</button>
+            <button class="portfolio-section btn btn-outline-primary m-1" onclick="filterProjects('blog')">Blogi</button>
+            <button class="portfolio-section btn btn-outline-primary m-1" onclick="filterProjects('portfolio')">Portfolio</button>
+        </div>
+
+        <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+        <div style="margin-bottom: 60px;"></div>
+
+        <!-- 2. Siatka projektów -->
+        <div class="row" id="portfolio-items">
+            <!-- Przykładowy projekt 1 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-section portfolio-item ecommerce">
+                <div class="portfolio-section card">
+                    <img src="path_to_project_image1.jpg" alt="Projekt X" class="portfolio-section card-img-top img-fluid">
+                    <div class="portfolio-section card-body">
+                        <h5 class="portfolio-section card-title">Projekt X</h5>
+                        <p class="portfolio-section card-text">Strona e-commerce dla klienta Y. Zbudowana na systemie WordPress z integracją WooCommerce.</p>
+                        <!-- 3. Opis projektu i CTA -->
+                        <button type="button" class="portfolio-section btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                            Zobacz szczegóły
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal dla Projektu 1 -->
+            <div class="portfolio-section modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+                <div class="portfolio-section modal-dialog modal-lg">
+                    <div class="portfolio-section modal-content">
+                        <div class="portfolio-section modal-header">
+                            <h5 class="portfolio-section modal-title" id="project1ModalLabel">Projekt X - Szczegóły</h5>
+                            <button type="button" class="portfolio-section btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+                        </div>
+                        <div class="portfolio-section modal-body">
+                            <img src="path_to_project_image1_large.jpg" alt="Projekt X" class="portfolio-section img-fluid mb-3">
+                            <h5>Opis projektu:</h5>
+                            <p>Ten projekt to kompleksowa strona e-commerce dla klienta z branży odzieżowej. Strona została zbudowana na WordPressie z integracją WooCommerce, oferując płynne doświadczenia zakupowe dla użytkowników.</p>
+                            <h5>Technologie użyte:</h5>
+                            <ul>
+                                <li>WordPress</li>
+                                <li>WooCommerce</li>
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>PHP</li>
+                            </ul>
+                            <h5>Rezultaty:</h5>
+                            <p>Strona wygenerowała wzrost konwersji o 35% w ciągu pierwszych trzech miesięcy po uruchomieniu.</p>
+                        </div>
+                        <div class="portfolio-section modal-footer">
+                            <button type="button" class="portfolio-section btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Przykładowy projekt 2 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-section portfolio-item webapp">
+                <div class="portfolio-section card">
+                    <img src="path_to_project_image2.jpg" alt="Projekt Y" class="portfolio-section card-img-top img-fluid">
+                    <div class="portfolio-section card-body">
+                        <h5 class="portfolio-section card-title">Projekt Y</h5>
+                        <p class="portfolio-section card-text">Aplikacja webowa dla firmy technologicznej, zbudowana z wykorzystaniem React i Node.js.</p>
+                        <button type="button" class="portfolio-section btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                            Zobacz szczegóły
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal dla Projektu 2 -->
+            <div class="portfolio-section modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+                <div class="portfolio-section modal-dialog modal-lg">
+                    <div class="portfolio-section modal-content">
+                        <div class="portfolio-section modal-header">
+                            <h5 class="portfolio-section modal-title" id="project2ModalLabel">Projekt Y - Szczegóły</h5>
+                            <button type="button" class="portfolio-section btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+                        </div>
+                        <div class="portfolio-section modal-body">
+                            <img src="path_to_project_image2_large.jpg" alt="Projekt Y" class="portfolio-section img-fluid mb-3">
+                            <h5>Opis projektu:</h5>
+                            <p>Aplikacja webowa wspomagająca zarządzanie projektami, stworzona dla firmy technologicznej. Zbudowana z użyciem React, Node.js oraz MongoDB.</p>
+                            <h5>Technologie użyte:</h5>
+                            <ul>
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>Express.js</li>
+                            </ul>
+                            <h5>Rezultaty:</h5>
+                            <p>Aplikacja umożliwiła firmie zwiększenie efektywności zarządzania projektami o 50%.</p>
+                        </div>
+                        <div class="portfolio-section modal-footer">
+                            <button type="button" class="portfolio-section btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Przykładowy projekt 2 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-section portfolio-item webapp">
+                <div class="portfolio-section card">
+                    <img src="path_to_project_image2.jpg" alt="Projekt Y" class="portfolio-section card-img-top img-fluid">
+                    <div class="portfolio-section card-body">
+                        <h5 class="portfolio-section card-title">Projekt Y</h5>
+                        <p class="portfolio-section card-text">Aplikacja webowa dla firmy technologicznej, zbudowana z wykorzystaniem React i Node.js.</p>
+                        <button type="button" class="portfolio-section btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                            Zobacz szczegóły
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal dla Projektu 2 -->
+            <div class="portfolio-section modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+                <div class="portfolio-section modal-dialog modal-lg">
+                    <div class="portfolio-section modal-content">
+                        <div class="portfolio-section modal-header">
+                            <h5 class="portfolio-section modal-title" id="project2ModalLabel">Projekt Y - Szczegóły</h5>
+                            <button type="button" class="portfolio-section btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+                        </div>
+                        <div class="portfolio-section modal-body">
+                            <img src="path_to_project_image2_large.jpg" alt="Projekt Y" class="portfolio-section img-fluid mb-3">
+                            <h5>Opis projektu:</h5>
+                            <p>Aplikacja webowa wspomagająca zarządzanie projektami, stworzona dla firmy technologicznej. Zbudowana z użyciem React, Node.js oraz MongoDB.</p>
+                            <h5>Technologie użyte:</h5>
+                            <ul>
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>Express.js</li>
+                            </ul>
+                            <h5>Rezultaty:</h5>
+                            <p>Aplikacja umożliwiła firmie zwiększenie efektywności zarządzania projektami o 50%.</p>
+                        </div>
+                        <div class="portfolio-section modal-footer">
+                            <button type="button" class="portfolio-section btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div style="margin-bottom: 30px;"></div>
+
+        <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+        <!-- 4. Technologie, które wykorzystujesz -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h1 class="portfolio-section section-header text-center">Wykorzystywane technologie</h1>
+        
+                <div style="margin-bottom: 30px;"></div>
+        
+                <div class="card no-hover">
+                    <div class="card-body">
+                        <div class="portfolio-section d-flex justify-content-center flex-wrap grid-container">
+                            <!-- HTML -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="HTML" width="50" class="portfolio-section m-2">
+                                <h5>HTML</h5>
+                                <p class="text-muted">HTML to podstawowy język tworzenia struktury stron internetowych. Pozwala definiować treść, odnośniki i elementy wizualne.</p>
+                            </div>
+                            <!-- CSS -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" alt="CSS" width="50" class="portfolio-section m-2">
+                                <h5>CSS</h5>
+                                <p class="text-muted">CSS odpowiada za wygląd i układ elementów na stronie, w tym kolory, czcionki, odstępy i responsywność.</p>
+                            </div>
+                            <!-- JavaScript -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" width="50" class="portfolio-section m-2">
+                                <h5>JavaScript</h5>
+                                <p class="text-muted">JavaScript umożliwia dynamiczne interakcje na stronach, takie jak animacje, obsługa formularzy czy zaawansowane funkcje.</p>
+                            </div>
+                            <!-- PHP -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="PHP" width="50" class="portfolio-section m-2">
+                                <h5>PHP</h5>
+                                <p class="text-muted">PHP to język skryptowy działający po stronie serwera, stosowany do obsługi dynamicznych stron internetowych i baz danych.</p>
+                            </div>
+                            <!-- MySQL -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://cdn4.iconfinder.com/data/icons/logos-3/181/MySQL-512.png" alt="MySQL" width="50" class="portfolio-section m-2">
+                                <h5>MySQL</h5>
+                                <p class="text-muted">MySQL to system zarządzania bazami danych, używany do przechowywania i organizowania danych na stronach internetowych.</p>
+                            </div>
+                            <!-- WordPress -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="WordPress" width="50" class="portfolio-section m-2">
+                                <h5>WordPress</h5>
+                                <p class="text-muted">WordPress to system zarządzania treścią (CMS), pozwalający na łatwe tworzenie i zarządzanie stronami internetowymi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-bottom: 60px;"></div>
+       
+        <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+        
+        <!-- 6. Sekcja z opiniami klientów -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h1 class="portfolio-section section-header text-center">Opinie moich klientów</h1>
+                <div id="customerTestimonials" class="portfolio-section carousel slide" data-bs-ride="carousel">
+                    <!-- Kropki nawigacyjne -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#customerTestimonials" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#customerTestimonials" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+        
+                    <div class="portfolio-section carousel-inner">
+                        <!-- Pierwszy blok z cytatem w karcie -->
+                        <div class="portfolio-section carousel-item active text-center" data-bs-interval="10000">
+                            <div class="card mx-auto" style="max-width: 600px;">
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-4">
+                                        <p>"Miłosz stworzył dla nas niesamowitą stronę e-commerce. Jesteśmy bardzo zadowoleni z efektów!"</p>
+                                        
+                                        <div style="margin-bottom: 50px;"></div>
+                                        
+                                        <footer class="blockquote-footer">Jan Kowalski, CEO w Firmie Y</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Drugi blok z cytatem w karcie -->
+                        <div class="portfolio-section carousel-item text-center" data-bs-interval="10000">
+                            <div class="card mx-auto" style="max-width: 600px;">
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-4">
+                                        <p>"Współpraca z Miłoszem była niezwykle owocna. Jego profesjonalizm przekroczył nasze oczekiwania."</p>
+                                        
+                                        <div style="margin-bottom: 50px;"></div>
+                                        
+                                        <footer class="blockquote-footer">Anna Nowak, Manager w Firmie Z</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 100px;"></div>
+        
+        <!-- 7. Przyciski CTA -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <a href="index.html#contactForm" class="portfolio-section btn btn-lg btn-success">Skontaktuj się ze mną</a>
+            </div>
+        </div>
+
+</section>
+
+<!-- Skrypt JavaScript do filtrowania projektów -->
+<script>
+    function filterProjects(category) {
+        let projects = document.querySelectorAll('.portfolio-item');
+        projects.forEach(project => {
+            if (category === 'all' || project.classList.contains(category)) {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+    <!-- Stopka -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h2>O mnie</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <p class="centered-paragraph">Nazywam się Miłosz Sowa i specjalizuję się w tworzeniu eleganckich oraz funkcjonalnych stron internetowych. 
+                        
+                        <div style="margin-bottom: 20px;"></div>
+                        
+                        Jeśli potrzebujesz profesjonalnego wsparcia w projektowaniu swojej witryny, zapraszam do kontaktu.</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h2>Kontakt</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <p><strong>Email:</strong> <a href="mailto:cyberalchemia@gmail.com">cyberalchemia@gmail.com</a></p>
+                    <p><strong>Telefon:</strong> <a href="tel:+48693859349">+48 693 859 349</a></p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h2>Znajdź mnie na</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                        </a>
+                        <a href="https://x.com" target="_blank" class="social-button x">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-black-icon.png" alt="X">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-button instagram">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border-top: 1px solid #d3cacc; width: 100%; margin: 16px auto;">
+
+            <div class="text-center">
+                <p>&copy; 2024 Miłosz Sowa. Wszystkie prawa zastrzeżone.</p>
+
+                <div style="margin-bottom: -20px;"></div>
+
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        </script>
+
+    </footer>
+
+    <script src="script_form.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
