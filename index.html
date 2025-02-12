@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sishnu - strona główna">
+    <title>Sishnu - strona główna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div style="margin-bottom: -50px;"></div>
+    
+    <nav class="navbar" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);">
+        <div class="nav-wrapper important">
+            <a href="index.html" class="brand-logo left">
+                <img src="https://cdn-icons-png.flaticon.com/256/6583/6583566.png" width="40" class="logo-image">
+            </a>
+            
+            <!-- Fullscreen Menu (hidden in mobile) -->
+            <ul class="fullscreen-menu right">
+                <li><a href="sishnu.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">Sishnu</a></li>
+            
+                <li class="dropdown">
+                    <a href="muzyka.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">Muzyka</a>
+                    <ul class="dropdown-menu center">
+                        <li><a href="mojamuzyka.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>Muzyka</b></a></li>
+                        <li><a href="wspolpraca.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>Współpraca</b></a></li>
+                        <li><a href="realizacje.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>Realizacje</b></a></li>
+                    </ul>
+                </li>
+            
+                <li class="dropdown">
+                    <a href="pisanie.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">Pisanie</a>
+                    <ul class="dropdown-menu center">
+                        <li><a href="poezje.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>Poezje</b></a></li>
+                        <li><a href="basnie.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>Baśnie</b></a></li>
+                        <li><a href="piosenki.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>Piosenki</b></a></li>
+                    </ul>
+                </li>
+            
+                <li class="dropdown">
+                    <a href="aspenzibar.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">Aspenzibar Dom Nomada & Skansen SPA</a>
+                    <ul class="dropdown-menu center">
+                        <li><a href="parzenica.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>Parzenica</b></a></li>
+                        <li><a href="masaz.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>Masaż</b></a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+                  
+        
+            <!-- Hamburger menu trigger for mobile -->
+            <div class="menu-wrapper">
+                <button data-target="slide-out-right" class="sidenav-trigger" aria-label="Menu">
+                    Menu ☰
+                </button>
+            </div>  
+    
+        <!-- Collapsible menu for mobile (Slide In from Right) -->
+
+        <div class="menu-overlay"></div> <!-- Overlay dla przyciemnienia -->
+
+        <ul class="sidenav right-aligned" id="slide-out-right">
+            <li>
+                <div class="collapsible-header">Menu
+                    <a href="#" class="sidenav-close" style="margin-left: auto;">
+                        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png" alt="Zamknij menu" style="width: 35px; height: 35px; margin-top: 15px;">
+                    </a>
+                </div>
+                <ul id="slide-out" class="collapsible">
+                    <!-- Linki standardowe -->
+                    <li><a href="sishnu.html" class="close-menu shadow-effect"><b>Sishnu</b></a></li>
+                    
+                    <!-- Dropdown dla Muzyka -->
+                    <li>
+                        <div class="dropdown-header" style="display: flex; align-items: center;">
+                            <a href="muzyka.html" class="close-menu shadow-effect">
+                                <b>Muzyka</b>
+                            </a>
+                            <a href="#!" class="dropdown-trigger" data-target="muzyka-dropdown" style="margin-left: 10px; margin-top: 5px;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Rozwiń" style="width: 15px; height: 15px;">
+                            </a>
+                        </div>
+                        <ul id="muzyka-dropdown" class="dropdown-content">
+                            <!-- Przycisk zamknięcia -->
+                            <li>
+                                <a href="#!" class="dropdown-close">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/458/458595.png" alt="Zamknij" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                                </a>
+                            </li>
+                            <li><a href="mojamuzyka.html" class="close-menu shadow-effect"><b>Muzyka</b></a></li>
+                            <li><a href="wspolpraca.html" class="close-menu shadow-effect"><b>Współpraca</b></a></li>
+                            <li><a href="realizacje.html" class="close-menu shadow-effect"><b>Realizacje</b></a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Dropdown dla Pisanie -->
+                    <li>
+                        <div class="dropdown-header" style="display: flex; align-items: center;">
+                            <a href="pisanie.html" class="close-menu shadow-effect">
+                                <b>Pisanie</b>
+                            </a>
+                            <a href="#!" class="dropdown-trigger" data-target="pisanie-dropdown" style="margin-left: 10px; margin-top: 5px;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Rozwiń" style="width: 15px; height: 15px;">
+                            </a>
+                        </div>
+                        <ul id="pisanie-dropdown" class="dropdown-content">
+                            <!-- Przycisk zamknięcia -->
+                            <li>
+                                <a href="#!" class="dropdown-close">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/458/458595.png" alt="Zamknij" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                                </a>
+                            </li>
+                            <li><a href="poezje.html" class="close-menu shadow-effect"><b>Poezje</b></a></li>
+                            <li><a href="basnie.html" class="close-menu shadow-effect"><b>Baśnie</b></a></li>
+                            <li><a href="piosenki.html" class="close-menu shadow-effect"><b>Piosenki</b></a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Dropdown dla Aspenzibar -->
+                    <li>
+                        <div class="dropdown-header" style="display: flex; align-items: center;">
+                            <a href="aspenzibar.html" class="close-menu shadow-effect">
+                                <b>Aspenzibar Dom Nomada & Skansen SPA</b>
+                            </a>
+                            <a href="#!" class="dropdown-trigger" data-target="aspenzibar-dropdown" style="margin-left: 10px; margin-top: 5px;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Rozwiń" style="width: 15px; height: 15px;">
+                            </a>
+                        </div>
+                        <ul id="aspenzibar-dropdown" class="dropdown-content">
+                            <!-- Przycisk zamknięcia -->
+                            <li>
+                                <a href="#!" class="dropdown-close">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/458/458595.png" alt="Zamknij" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                                </a>
+                            </li>
+                            <li><a href="parzenica.html" class="close-menu shadow-effect"><b>Parzenica</b></a></li>
+                            <li><a href="masaz.html" class="close-menu shadow-effect"><b>Masaż</b></a></li>
+                        </ul>
+                    </li>              
+                </ul>
+            </li>
+        </ul>
+        
+        
+    </nav>
+    
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1><b>Sishnu</b></h1>
+                <p><b>Pokrzywa (ne.) - chwast o wielkiej i różnorodnej mocy.</b></p>
+
+                    <div style="margin-bottom: 15px;"></div>
+                    
+                    <p><b>Ma wiele właściwości leczniczych i mnóstwo żelaza. Przędza z pokrzywy błyszczy i mieni się jak jedwab.</p></b>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-divider-gradient"></div>
+
+    <section id="about" class="section fade-in">
+        <div class="container">
+            <div class="card hoverable">
+                <div class="card-content">
+                        <span class="card-title">Helena Matuszewska / kreatorka Sishnu</span>
+            
+                        <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                        <h2 class="custom-heading">Kompozytorka, poetka, tekściarka, muzyk wędrujący z suką biłgorajską.</h2>
+                        <div style="margin-bottom: 15px;"></div>
+                        
+                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                        
+                        <h2 class="custom-heading">Wykształcona na klasyczną skrzypaczkę dała dyla na szerokie pola world music.</h2>
+                        <div style="margin-bottom: 15px;"></div>
+                        
+                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                        
+                        <h2 class="custom-heading">Jest saunamasterką i masażystką. Bywa z miasta, jest ze wsi.</h2>
+                        <div style="margin-bottom: 15px;"></div>
+                        
+                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                        
+                        <h2 class="custom-heading">Najchętniej przesiaduje w ciszy i przestrzeni wzgórz, lasów i łąk.</h2>                                            
+                
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider-gradient"></div>
+
+
+    <footer class="page-footer custom-footer" style="box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); background-color: #A9B18E;">
+        <div class="container">
+    
+            <!-- Contact Section -->
+            <div class="contact-container" style="background: linear-gradient(40deg, #B76565, #722F2F, #8B3A3A, #5A2121); padding: 40px 20px; border-top: 1px solid #ccc; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+                <h5 class="contact-heading" style="font-weight: 500; font-size: 36px; color: #D4AF37; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 
+                -2px -2px 5px rgba(255, 255, 255, 0.5);">Kontakt</h5>
+                <div class="section-divider" style="width: 60px; height: 2px; background: #8b9c9f; margin: 20px auto;"></div>
+                
+                <!-- Nowy paragraf z tym stylem -->
+                <p class="grey-text text-lighten-4" style="font-size: 18px; font-weight: bold; color: #d1d1d1;">
+                    Jeśli masz jakiekolwiek pytania, skontaktuj się ze mną!
+                </p>
+                
+                <ul class="contact-list" style="list-style: none; padding: 0; margin: 0; font-size: 18px; color: #666;">
+                    <li style="margin: 10px 0;">
+                        <i class="material-icons" style="
+  vertical-align: middle; 
+  color: transparent;
+  font-size: 20px; 
+  font-weight: bold; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15), 
+               -1px -1px 3px rgba(255, 255, 255, 0.15);
+  background: linear-gradient(135deg, #FF7F50 0%, #FFD700 25%, #ADFF2F 50%, #40E0D0 75%, #6A5ACD 100%);
+  background-size: 400% 400%;
+  animation: custom-gradient-animation 15s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+">
+  e-mail
+</i>
+
+                        <a href="mailto:sishnuart@gmail.com" style="color: #6B8E23; text-decoration: none; margin-left: 10px; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color='#6B8E23'">sishnuart@gmail.com</a>
+                    </li>
+                    <li style="margin: 10px 0;">
+                        <i class="material-icons" style="
+  vertical-align: middle; 
+  color: transparent;
+  font-size: 20px; 
+  font-weight: bold; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15), 
+               -1px -1px 3px rgba(255, 255, 255, 0.15);
+  background: linear-gradient(45deg, #FF7F50 0%, #FFD700 25%, #ADFF2F 50%, #40E0D0 75%, #6A5ACD 100%);
+  background-size: 500% 500%;
+  animation: custom-2-gradient-animation 15s linear infinite;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+">
+  telefon
+</i>
+                        <a href="tel:+48698626113" style="color: #6B8E23; text-decoration: none; margin-left: 10px; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color='#6B8E23'">+48 698 626 113</a>
+                    </li>
+                </ul>
+            </div>
+    
+<!-- Sekcja social mediów -->
+<div class="footer-social" style="text-align: center; margin-top: 20px;">
+    <h7 style="color: #D4AF37; font-size: 36px; font-weight: bold; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+        Znajdź mnie w sieci
+    </h7>
+    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+        <a href="https://www.instagram.com/_._.sishnu._._/?locale=my&hl=en" target="_blank" style="text-decoration: none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" width="32" height="32" 
+                 style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" 
+                 onmouseover="this.style.transform='scale(1.1)'" 
+                 onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <a href="https://www.facebook.com/sishnumusic" target="_blank" style="text-decoration: none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Facebook" width="32" height="32" 
+                 style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" 
+                 onmouseover="this.style.transform='scale(1.1)'" 
+                 onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <a href="https://www.facebook.com/vennasana.artofwords" target="_blank" style="text-decoration: none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Behance" width="32" height="32" 
+                 style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" 
+                 onmouseover="this.style.transform='scale(1.1)'" 
+                 onmouseout="this.style.transform='scale(1)'">
+            </a>
+            <a href="https://www.youtube.com/@sishnumusic" target="_blank" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Behance" width="32" height="32" 
+                     style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" 
+                     onmouseover="this.style.transform='scale(1.1)'" 
+                     onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <a href="https://open.spotify.com/artist/5VHvn3qi6B4fIR8emfx7ui?si=QaN9hD8MQQ2vahN7U4e3dA" target="_blank" style="text-decoration: none;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png" alt="Behance" width="32" height="32" 
+                         style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" 
+                         onmouseover="this.style.transform='scale(1.1)'" 
+                         onmouseout="this.style.transform='scale(1)'">
+                    </a>
+        </div>
+</div>
+
+            <div class="section-divider-line"></div>
+    
+            <!-- Footer Bottom Section -->
+            <div class="footer-copyright">
+                <div class="container">
+                    <p class="grey-text text-lighten-4" style="font-size: 18px; font-weight: bold; color: #6B8E23;">
+                        &copy; <span id="currentYear"></span> Helena Matuszewska. Wszelkie prawa zastrzeżone.
+                    </p>                
+                    <p-2 class="grey-text text-lighten-4" style="font-size: 12px; color: #6B8E23; margin-top: 10px;">
+                        Strona wykonana przez <a href="https://cyberalchemia.pl" style="color: #FFD700; text-decoration: none; font-weight: bold;" onmouseover="this.style.color='#FFA500'" onmouseout="this.style.color='#FFD700'">Cyber Alchemia by Miłosz Sowa</a>.
+                    </p>
+                </div>
+            </div>
+
+            <script>
+                document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+            </script>
+    
+        </footer>    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    // Initialize Materialize side navigation for slide in from right
+    $(document).ready(function(){
+        $(".sidenav").sidenav({
+            edge: 'right'  // Set menu to slide in from the right
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Inicjalizacja Sidenav
+        const sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+
+        // Inicjalizacja Dropdown
+        const dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns, {
+            constrainWidth: false, // Dropdown szerokości do kontenera
+            coverTrigger: false // Dropdown nie zakrywa przycisku
+        });
+    });
+</script>
+
+<script>
+    document.querySelectorAll('.dropdown-close').forEach(closeIcon => {
+        closeIcon.addEventListener('click', function () {
+            const dropdownInstance = M.Dropdown.getInstance(
+                document.querySelector('.dropdown-trigger')
+            );
+            dropdownInstance.close();
+        });
+    });
+</script>
+
+<script>
+    const overlay = document.querySelector('.menu-overlay');
+    const dropdownTrigger = document.querySelector('.dropdown-trigger');
+    const dropdownClose = document.querySelectorAll('.dropdown-close');
+
+    // Funkcja pokazująca overlay
+    const showOverlay = () => {
+        overlay.classList.add('active');
+    };
+
+    // Funkcja ukrywająca overlay
+    const hideOverlay = () => {
+        overlay.classList.remove('active');
+    };
+
+    // Obsługa otwierania dropdowna
+    dropdownTrigger.addEventListener('click', showOverlay);
+
+    // Obsługa zamykania dropdowna i ukrycia overlay
+    dropdownClose.forEach(closeButton => {
+        closeButton.addEventListener('click', hideOverlay);
+    });
+
+    // Ukrycie overlay przy kliknięciu w sam overlay
+    overlay.addEventListener('click', hideOverlay);
+</script>
+
+</body>
+</html>
