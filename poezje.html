@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sishnu - Pisanie - Poezje">
+    <title>Sishnu - Pisanie - Poezje</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preload" as="image" href="https://i.imgur.com/8JkUCOo.jpeg">
+    <link rel="preload" as="image" href="https://i.imgur.com/e8D0CyF.jpeg">
+    <link rel="preload" as="image" href="https://i.imgur.com/8JkUCOo.jpeg">
+
+</head>
+<body>
+
+    <div style="margin-bottom: -50px;"></div>
+    
+    <nav class="navbar" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);">
+      <div class="nav-wrapper important">
+          <a href="index.html" class="brand-logo left">
+              <img src="https://cdn-icons-png.flaticon.com/256/6583/6583566.png" width="40" class="logo-image">
+          </a>
+          
+          <!-- Fullscreen Menu (hidden in mobile) -->
+          <ul class="fullscreen-menu right">
+              <li><a href="sishnu.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">SISHNU</a></li>
+          
+              <li class="dropdown">
+                  <a href="muzyka.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">MUZYKA</a>
+                  <ul class="dropdown-menu center">
+                      <li><a href="mojamuzyka.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>MUZYKA</b></a></li>
+                      <li><a href="wspolpraca.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>WSPÓŁPRACA</b></a></li>
+                      <li><a href="realizacje.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>REALIZACJE</b></a></li>
+                  </ul>
+              </li>
+          
+              <li class="dropdown">
+                  <a href="pisanie.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">PISANIE</a>
+                  <ul class="dropdown-menu center">
+                      <li><a href="poezje.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>POEZJE</b></a></li>
+                      <li><a href="basnie.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>BAŚNIE</b></a></li>
+                      <li><a href="piosenki.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>PIOSENKI</b></a></li>
+                  </ul>
+              </li>
+          
+              <li class="dropdown">
+                  <a href="kontakt.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">KONTAKT</a>
+              </li>
+          </ul>
+          
+<!-- Sekcja ikon społecznościowych -->
+<div class="footer-social" style="text-align: center; margin-top: 20px; padding-bottom: 20px;">
+  <div id="footer-social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; margin-left: 100px; margin-top: -5px;">
+      <a href="https://www.instagram.com/_._.sishnu._._/?locale=my&hl=en" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" width="32" height="32" style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+      <a href="https://www.facebook.com/sishnumusic" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Facebook" width="32" height="32" style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+      <a href="https://www.facebook.com/vennasana.artofwords" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Behance" width="32" height="32" style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+      <a href="https://www.youtube.com/@sishnumusic" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="32" height="32" style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+      <a href="https://open.spotify.com/artist/5VHvn3qi6B4fIR8emfx7ui?si=QaN9hD8MQQ2vahN7U4e3dA" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png" alt="Spotify" width="32" height="32" style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      </a>
+  </div>
+</div>
+
+          <!-- Hamburger menu trigger for mobile -->
+          <div class="menu-wrapper">
+              <button data-target="slide-out-right" class="sidenav-trigger" aria-label="Menu">
+                  Menu ☰
+              </button>
+          </div>  
+  
+      <!-- Collapsible menu for mobile (Slide In from Right) -->
+
+      <ul class="sidenav right-aligned" id="slide-out-right">
+          <li>
+              <div class="collapsible-header">Menu
+                  <a href="#" class="sidenav-close" style="margin-left: auto;">
+                      <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png" alt="Zamknij menu" style="width: 35px; height: 35px; margin-top: 15px;">
+                  </a>
+              </div>
+              <ul id="slide-out" class="collapsible">
+                  <!-- Linki standardowe -->
+                  <li><a href="sishnu.html" class="close-menu shadow-effect"><b>SISHNU</b></a></li>
+                  
+                  <!-- Dropdown dla Muzyka -->
+                  <li>
+                      <div class="dropdown-header" style="display: flex; align-items: center;">
+                          <a href="muzyka.html" class="close-menu shadow-effect">
+                              <b>MUZYKA</b>
+                          </a>
+                          <a href="#!" class="dropdown-trigger" data-target="muzyka-dropdown" style="margin-left: 10px; margin-top: 5px;">
+                              <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Rozwiń" style="width: 15px; height: 15px;">
+                          </a>
+                      </div>
+                      <ul id="muzyka-dropdown" class="dropdown-content">
+                          <!-- Przycisk zamknięcia -->
+                          <li>
+                              <a href="#!" class="dropdown-close">
+                                  <img src="https://cdn-icons-png.flaticon.com/512/458/458595.png" alt="Zamknij" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                              </a>
+                          </li>
+                          <li><a href="mojamuzyka.html" class="close-menu shadow-effect"><b>MUZYKA</b></a></li>
+                          <li><a href="wspolpraca.html" class="close-menu shadow-effect"><b>WSPÓŁPRACA</b></a></li>
+                          <li><a href="realizacje.html" class="close-menu shadow-effect"><b>REALIZACJE</b></a></li>
+                      </ul>
+                  </li>
+                  
+                  <!-- Dropdown dla Pisanie -->
+                  <li>
+                      <div class="dropdown-header" style="display: flex; align-items: center;">
+                          <a href="pisanie.html" class="close-menu shadow-effect">
+                              <b>PISANIE</b>
+                          </a>
+                          <a href="#!" class="dropdown-trigger" data-target="pisanie-dropdown" style="margin-left: 10px; margin-top: 5px;">
+                              <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Rozwiń" style="width: 15px; height: 15px;">
+                          </a>
+                      </div>
+                      <ul id="pisanie-dropdown" class="dropdown-content">
+                          <!-- Przycisk zamknięcia -->
+                          <li>
+                              <a href="#!" class="dropdown-close">
+                                  <img src="https://cdn-icons-png.flaticon.com/512/458/458595.png" alt="Zamknij" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                              </a>
+                          </li>
+                          <li><a href="poezje.html" class="close-menu shadow-effect"><b>POEZJE</b></a></li>
+                          <li><a href="basnie.html" class="close-menu shadow-effect"><b>BAŚNIE</b></a></li>
+                          <li><a href="piosenki.html" class="close-menu shadow-effect"><b>PIOSENKI</b></a></li>
+                      </ul>
+                  </li>
+      
+                  <!-- Dropdown dla Aspenzibar -->
+                  <li>
+                      <div class="dropdown-header" style="display: flex; align-items: center;">
+                          <a href="kontakt.html" class="close-menu shadow-effect">
+                              <b>KONTAKT</b>
+                          </a>
+                      </div>
+                  </li>              
+              </ul>
+          </li>
+      
+          <div class="footer-social">
+              <div class="social-icons">
+                  <!-- Górny rząd (3 ikony) -->
+                  <div class="social-row">
+                      <a href="https://www.instagram.com/_._.sishnu._._/?locale=my&hl=en" target="_blank">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram">
+                      </a>
+                      <a href="https://www.facebook.com/sishnumusic" target="_blank">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Facebook">
+                      </a>
+                      <a href="https://www.facebook.com/vennasana.artofwords" target="_blank">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Behance">
+                      </a>
+                  </div>
+      
+                  <!-- Dolny rząd (2 ikony) -->
+                  <div class="social-row">
+                      <a href="https://www.youtube.com/@sishnumusic" target="_blank">
+                          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+                      </a>
+                      <a href="https://open.spotify.com/artist/5VHvn3qi6B4fIR8emfx7ui?si=QaN9hD8MQQ2vahN7U4e3dA" target="_blank">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png" alt="Spotify">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      
+      </ul>
+      
+      
+  </nav>
+
+    <header class="hero-6">
+        <div class="container">
+            <div class="hero-content">
+                <h1><b>POEZJE</b></h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-divider-gradient"></div>
+
+    <section id="about" class="section custom-2-section fade-in" style="display: flex; justify-content: center;">
+        <div class="container custom-2-container">
+            <!-- Karta Albumy -->
+            
+    
+            <!-- Kafelki i Modal -->
+            <div class="card hoverable custom-2-card" style="margin-bottom: 20px;">
+                <div class="card-content custom-2-card-content">
+                  <div class="custom-2-link-grid" style="display: flex; flex-direction: column; align-items: center;">
+                    <!-- Sekcja zdjęć w siatce -->
+                    <section class="custom-grid">
+                      
+                        <!-- Kafelek 1 -->
+                        <div class="card-image-2">
+                            <a href="#modal1" class="modal-trigger" style="margin-bottom: 15px;">
+                              <img src="https://i.imgur.com/8JkUCOo.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                            </a>
+                          </div>
+                          
+                          <!-- Modal -->
+                          <div id="modal1" class="modal">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                    <i class="material-icons small">zamknij</i>
+                                </a>
+                            </div>
+
+                              <span class="card-title-2">Kobieta</span>
+                              <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                              <h2 class="custom-heading-3">Jestem Kobietą. Uprawiam sztukę tak jak uprawia się ogród. Sadzę, nawadniam, pielęgnuję, nawożę, czule rozmawiam, siedzę w ciszy. </h2>
+                            
+                          <div style="margin-bottom: 15px;"></div>
+                          
+                          <h2 class="custom-heading-3">Moja sztuka jest permakulturowa. 
+                            </h2>
+                      
+                          <div style="margin-bottom: -15px;"></div>
+                          
+                          <h2 class="custom-heading-3">Nie stosuję już logicznej oceny, sztywnej analizy dzieła, sensu, poprawności, wspaniałości frazy. Moje wiersze to bukiety chwastów, nie robię oprysków, nie wyganiam mrówek. Patrzę jak zmienia się wszytko co wrzucam na kompost, do Ziemi. Stare piosenki, stare teksty, stare myśli i słowa. Jak zamieniają się w kolejne życie. 
+
+                          </h2> 
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">Oglądam je z różnych stron, patrzę jak rosną.</h2>
+
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">W moim domu mam bałagan, a kurz tańczy w świetle i przykrywa moje papiery, zeszyty, książki, farby. 
+
+                            </h2> 
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">Patrzę na sterty słów jak wypadają z szuflad mojej nieuczesanej głowy. 
+                              
+                            </h2>
+                              
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3"> 
+                            
+                            Słucham i nagrywam dźwięki nie czyszcząc już kurzu z każdej ścieżki. On jest potrzebny, żeby ten dźwięk brzmiał jak moje serce.
+
+                            </h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">Patrzę w lustro i daję umrzeć wszystkim swoim twarzom, wszystkim swoim maskom, wszystkim starym skórom.
+
+                            </h2>
+
+<div style="margin-bottom: -15px;"></div>
+
+<h2 class="custom-heading-3">
+
+  Ściągam buty i stawiam bose stopy między kawałkami siebie i kocham się, kocham się, kocham się ze sobą.</h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              Rozpuszczam warkocz i tańczę i wypuszczam i wpuszczam i jestem.</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              I rodzę wiersze i rodzę pieśni i rodzę obrazy i rodzę wszystkie swoje dzieci z bezwarunkową miłością Matki.</h2>
+                      
+                          <div style="margin-bottom: 15px;"></div>
+                      
+                          <h2 class="custom-heading-4">/styczeń 2023/</h2>
+                              
+                              <div style="margin-bottom: 20px;"></div>
+                              <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                              
+                            </div>
+                          </div>                          
+
+                      <!-- Kafelek 2 -->
+                      <div class="card-image-2">
+                        <a href="#modal2" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/e8D0CyF.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                <i class="material-icons small">zamknij</i>
+                            </a>
+                        </div>
+
+                          <span class="card-title-2">Woda</span>
+                          <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                          <h2 class="custom-heading-3">cisza Wody jest niezmierna</h2>
+                            
+                          <div style="margin-bottom: -15px;"></div>
+                          
+                          <h2 class="custom-heading-3">istnieje w huku największych wodospadów 
+                            </h2>
+                      
+                          <div style="margin-bottom: 15px;"></div>
+                          
+                          <h2 class="custom-heading-3">
+
+                          wyobraź sobie świętość</h2> 
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">nie tą z obrazka w świątyniach</h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+
+                            tylko płynącą z ziemi</h2> 
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            z Matki</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            z Łona</h2>
+
+<div style="margin-bottom: -15px;"></div>
+
+<h2 class="custom-heading-3">
+
+                            miejsca Wody są miejscami wielkiej mocy</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                            i jako miejsca mocy należy je traktować</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                            nie tak jak czci się umysłem czy abstrakcją religii</h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">Woda to istota która płynie</h2>
+                            
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">może ją znasz</h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">nosi imiona wszystkich kobiet i najstarszej z nas</h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">jeśli trzymasz ją na siłę zmieni bieg wyleje i odejdzie</h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">nie zatrzyma się nie obejrzy za siebie</h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+
+                            tylko zmieni kształt i nabierze mocy                             
+                            </h2> 
+                      
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">Wody nie można zatrzymać 
+                            </h2> 
+                      
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">możesz poczuć ale nie możesz zmienić</h2> 
+
+                            <div style="margin-bottom: -15px;"></div>
+                            
+                            <h2 class="custom-heading-3">
+                            
+                            możesz nauczyć się akceptować zmianę</h2> 
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            Wodospady, Jeziora, Rzeki, Strumenie, Morza, Oceany</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            to wszystko żywa istota, którą człowiek próbuje okiełznać</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                            jak dziką klacz czy szybkiego sokoła                             
+                            </h2>
+                      
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">istota Wody jest też miejscem</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                            gdzie idziesz spotkać się z kobiecą ciszą w chaosie</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            w całej jej zmiennej masie bez końca i początku</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            z kobiecym bezruchem w ciągłym przepływie</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+          
+                            <h2 class="custom-heading-3">
+
+                            z odwagą nurkowania wewnątrz z bezkompromisową mocą</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            z potęgą która wyleje z brzegów jeśli będą</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            zbyt ciasne</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            zbyt sztuczne</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                            zbyt poukładane 
+
+                            </h2>
+                      
+                          <div style="margin-bottom: 15px;"></div>
+                      
+                          <h2 class="custom-heading-4">/wrzesień 2024/</h2>
+                          
+                          <div style="margin-bottom: 20px;"></div>
+                          <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                          
+                        </div>
+                      </div>   
+                      
+                      <!-- Kafelek 3 -->
+                      <div class="card-image-2">
+                        <a href="#modal3" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/kxKrvgm.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                <i class="material-icons small">zamknij</i>
+                            </a>
+                        </div>
+
+                          <span class="card-title-2">cisza</span>
+                          <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                          
+                          <h2 class="custom-heading-3">mówią mi ludzie</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              mówią mi ludzie</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              mówią mi ludzie</h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              a ja czeszę włosy palcami</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+          
+                            <h2 class="custom-heading-3">
+
+                              pływam w gęstych</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              śniegach i chmurach</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              dotykam jasności</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              w najgłębszej nocy</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              opływam uda
+
+                            </h2>
+
+                            <h2 class="custom-heading-3">
+                            
+                              świętą rzeką z gór</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              i sieję wiatrem</h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              na cztery strony</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+          
+                            <h2 class="custom-heading-3">
+
+                              oczy usta włosy</h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              słucham czego</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              nie mówią mi świerki</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              nie mówią mi lisy</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              nie mówią mi góry
+
+                            </h2>
+                      
+                          <div style="margin-bottom: 15px;"></div>
+                      
+                          <h2 class="custom-heading-4">/3.04.2023/</h2>
+                          
+                          <div style="margin-bottom: 20px;"></div>
+                          <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                          
+                        </div>
+                      </div>   
+                      
+                      <!-- Kafelek 4 -->
+                      <div class="card-image-2">
+                        <a href="#modal4" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/bgYbT6P.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+                      
+<!-- Modal -->
+<div id="modal4" class="modal">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+            <i class="material-icons small">zamknij</i>
+        </a>
+    </div>
+
+      <span class="card-title-2">Ciemność</span>
+      <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+      <h2 class="custom-heading-3">Nie bój się o mnie. Prawda jest taka, że nie boję się ciemności w sobie. Nurkuję tak głęboko, że prawie mogę położyć się na dnie. Ciemność to jakość, z której powstał też twój świat.</h2>
+                            
+                          <div style="margin-bottom: 15px;"></div>
+                          
+                          <h2 class="custom-heading-3"> Nie wołam rozpaczliwie o przybycie światła. Pierwszy raz nie patrzę 
+                            w jego stronę kurczowo zaciskając pięści i oglądając się ze strachem dookoła. Ono jest. W swoim czasie przyjdzie mocniej. W tym roku celebruję ciemność jak miękki, pluszowo aksamitny, wełniany i drapiący koc.                             
+                            </h2>
+                      
+                          <div style="margin-bottom: 15px;"></div>
+                          
+                          <h2 class="custom-heading-3">Nie ratuj mnie, bo nie jestem w opresji. Mówię głośno swoje prawdy. Nie tęsknię do zabiegania. Do zgiełku. Do miliona zadań, żeby poczuć w sobie ważność. Jestem ważna czując w sobie pustkę.  
+
+                          </h2> 
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">A kiedy zamykam oczy coraz częściej woła mnie pustynia.</h2>
+
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">Wybrałam ciszę zamiast zgiełku miasta, żeby wreszcie nauczyć się siebie. W każdym bólu, w każdym smutku, w każdej stracie. Moja samotność jest dla mnie wartością, której nie umiałam doświadczyć 
+                            w chaosie tłumu. I mogę jednocześnie tęsknić za tym tłumem i za tymi zasłonami, gdzie kryłam się ja.                             
+                            </h2> 
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">Nie boję się stanąć nago sama przed sobą. Nie boję się dzielić sobą 
+                              ze światem. Ale moja nagość nie oznacza, że potrzebuję od ciebie ubrań, okrycia, że jest mi zimno. Ani nie oznacza, że widzisz całość 
+                              ani że pokażę ci wszystko, wszędzie, naraz.                              
+                              
+                            </h2>
+                              
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3"> 
+                            
+                              We mnie możesz zobaczyć fragmenty siebie. Odbite od twoich oczu. 
+                              I to od nich odbijasz swoje reakcje na mnie. 
+                            </h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">Moja samotność jest pełna. Nie potrzebuję już wypychać jej na siłę obecnością, jak martwego lisa. Moje wiersze i smutne piosenki 
+                              to pogodzone pomrukiwanie śpiącego, dzikiego zwierzęcia.                               
+                            </h2>
+
+<div style="margin-bottom: -15px;"></div>
+
+<h2 class="custom-heading-3">
+  Jestem żywa i płynie we mnie gęsta krew. 
+  </h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                              Nie martw się o mnie. Walczyłam długo. Teraz uczę się po prostu być. 
+                              </h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              I nie ma tu znaczenia ani sukces ani porażka. 
+
+                              </h2>
+                      
+                          <div style="margin-bottom: 15px;"></div>
+                      
+                          <h2 class="custom-heading-4">/22 grudnia 2022/</h2>
+      
+      <div style="margin-bottom: 20px;"></div>
+      <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+      
+    </div>
+  </div>   
+
+                      <!-- Kafelek 5 -->
+                      <div class="card-image-2">
+                        <a href="#modal5" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/DgHKHqI.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+                      
+<!-- Modal -->
+<div id="modal5" class="modal">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+            <i class="material-icons small">zamknij</i>
+        </a>
+    </div>
+
+      <span class="card-title-2">nagość</span>
+      <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+      <h2 class="custom-heading-3">zasiliłam już wiele dusz wiele serc wiele głów</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              świadomie i nieświadomie</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              dawałam z siebie bez umiaru</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              albo nie umiałam zobaczyć granic</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+          
+                            <h2 class="custom-heading-3">
+
+                              byłam piękna byłam wiotka</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              byłam taka jakiej pragnął świat</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              bujna pod kontrolą z szeregiem przyciętych liści</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              wystarczająco radosna</h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              co ci robi mój smutek
+
+                            </h2>
+
+                            <h2 class="custom-heading-3">
+                            
+                              moja naga prawdziwość rzeczy</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              co się stanie kiedy wesoła dziewczyna</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              dojrzała i stała się smutną kobietą</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+          
+                            <h2 class="custom-heading-3">
+
+                              już nie rodzi jabłek</h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              którymi możesz się karmić lub nie karmić</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            nie zastanawia się czy zasługuje na lato</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            i promienie słońca na swoim brzuchu</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              jest tak martwa jak żywa jest zima
+
+                            </h2>
+                      
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                            a taka śmierć zawsze rodzi jej życie</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                            z własną ciemnością i własnym światłem
+
+                            </h2>
+
+                          <div style="margin-bottom: 15px;"></div>
+                      
+                          <h2 class="custom-heading-4">/23.12.2022/</h2>
+      
+      <div style="margin-bottom: 20px;"></div>
+      <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+      
+    </div>
+  </div>   
+
+                      <!-- Kafelek 6 -->
+                      <div class="card-image-2">
+                        <a href="#modal6" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/v7Jg8xp.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="modal6" class="modal">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                <i class="material-icons small">zamknij</i>
+                            </a>
+                        </div>
+
+                          <span class="card-title-2">shapeshifting</span>
+                          <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                          <h2 class="custom-heading-3">I'm a shapeshifter</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              I take off the masks</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              one by one</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              one by one</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+          
+                            <h2 class="custom-heading-3">
+
+                              one by one</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              I'm not what </h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              I was yesterday</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              or what I will be </h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              between night and tomorrow
+
+                            </h2>
+
+                            <h2 class="custom-heading-3">
+                            
+                              only in shapelessness</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              I really exist</h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              there is a bright light</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+          
+                            <h2 class="custom-heading-3">
+
+                              coming from the darkest</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              center of me</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              flowing through</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              my feet</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              my eyes
+
+                            </h2>
+                      
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              my hands</h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                            I am surrounded by love 
+
+                            </h2>
+
+                            <h2 class="custom-heading-3">
+
+                              lots of love</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              it fills</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              my hips</h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              my heart
+
+                            </h2>
+                      
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+
+                              my stomach</h2>
+
+                            <div style="margin-bottom: 15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              when no one hunts
+
+                            </h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              no one looks
+
+                            </h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              it fawns to me 
+
+                            </h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              like a wild animal
+
+                            </h2>
+
+                            <div style="margin-bottom: -15px;"></div>
+
+                            <h2 class="custom-heading-3">
+                            
+                              missing the thick forest
+
+                            </h2>
+
+                          <div style="margin-bottom: 15px;"></div>
+                      
+                          <h2 class="custom-heading-4">/autumn 2019/</h2>
+                          
+                          <div style="margin-bottom: 20px;"></div>
+                          <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                          
+                        </div>
+                      </div>   
+
+                      <!-- Kafelek 7 -->
+                      <div class="card-image-2">
+                        <a href="#modal7" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/s9lIuBI.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+
+<!-- Modal -->
+<div id="modal7" class="modal">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+            <i class="material-icons small">zamknij</i>
+        </a>
+    </div>
+
+      <span class="card-title-2">zarysy</span>
+      <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+      <h2 class="custom-heading-3">jest jasno
+                            
+        </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">zarówno dzień jak i noc
+
+        </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">płoną w moich oczach
+
+        </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">a wiatr głaszcze mi włosy
+
+        </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">i wciera zapach lasu 
+
+        </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">tuż nad ramionami
+
+      </h2>
+
+      <div style="margin-bottom: 15px;"></div>
+
+      <h2 class="custom-heading-3">myślałam też o obecności 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        moich ust oddechu
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">szorstkiej skóry łokci
+
+      </h2>
+
+      <div style="margin-bottom: 15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        jestem w świetle
+
+      </h2>
+
+    <div style="margin-bottom: -15px;"></div>
+
+    <h2 class="custom-heading-3">
+      
+      niezależnie od przeszkód
+
+      </h2>
+
+    <div style="margin-bottom: -15px;"></div>
+
+    <h2 class="custom-heading-3">
+      
+      nawet teraz
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+        
+        kiedy zarys gór
+  
+        </h2>
+
+    <div style="margin-bottom: 15px;"></div>
+
+    <h2 class="custom-heading-3">
+        
+      rozmył się
+
+      </h2>
+
+  <div style="margin-bottom: 15px;"></div>
+
+  <h2 class="custom-heading-3">
+        
+    i już go
+
+    </h2>
+
+<div style="margin-bottom: 15px;"></div>
+
+<h2 class="custom-heading-3">
+        
+  nie pamiętam
+
+  </h2>
+
+<div style="margin-bottom: 15px;"></div>
+
+    <h2 class="custom-heading-4">/marzec 2020/</h2>
+      
+      <div style="margin-bottom: 20px;"></div>
+      <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+      
+    </div>
+  </div>   
+
+                      <!-- Kafelek 8 -->
+                      <div class="card-image-2">
+                        <a href="#modal8" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/5AJhDpJ.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="modal8" class="modal">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                <i class="material-icons small">zamknij</i>
+                            </a>
+                        </div>
+
+                          <span class="card-title-2">Testament</span>
+                          <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                          <h2 class="custom-heading-3">
+
+                            When death comes scatter my ashes to four directions.</h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            To the forests, to the mountains, to the sea, to the rivers. 
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            To earth and sky. I want to be escorted to Love and Light. 
+
+                          </h2>
+
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            Let all Women stand in a circle and send my spirit into space 
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            and let the Earth shut over my body.
+
+                          </h2>
+
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            Let the Men dance with one hand towards the sky and the other towards the earth. No matter if they can. 
+
+                          </h2>
+
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            The day death comes I will leave my music, my songs, my poems. 
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            The rest doesn't matter. Read them smoking tobacco and joints, 
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            play them while drinking wine, sing them while sipping rum. 
+
+                          </h2>
+
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            And then burn them on fire and write them in your hearts.
+
+                          </h2>
+
+                        <div style="margin-bottom: 15px;"></div>
+                    
+                        <h2 class="custom-heading-4">/summer 2019/</h2>
+                          
+                          <div style="margin-bottom: 20px;"></div>
+                          <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                          
+                        </div>
+                      </div>   
+                      
+                      <!-- Kafelek 9 -->
+                      <div class="card-image-2">
+                        <a href="#modal9" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/UFprQQA.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+
+                      <!-- Modal -->
+                    <div id="modal9" class="modal">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                <i class="material-icons small">zamknij</i>
+                            </a>
+                        </div>
+
+                          <span class="card-title-2">krew</span>
+                          <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                          <h2 class="custom-heading-3">
+                          
+                            nie pytaj mnie o krew 
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            o umieraniu wiem tyle co księżyc 
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            świecący słońcem w środku nocy
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            miesiąc w miesiąc
+
+                          </h2>
+
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            urodziłam się ze śmiercią
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            która mnie dojrzewa
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            a kiedy przyjdzie pora 
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            oddam się cała
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            proch w proch 
+
+                          </h2>
+
+                          <div style="margin-bottom: 15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            i ziemia urodzi mnie grzybami 
+
+                          </h2>
+
+                          <h2 class="custom-heading-3">
+                          
+                            które rozsieje wiatr 
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            i słońce dojrzeje mnie lasami
+
+                          </h2>
+
+                          <h2 class="custom-heading-3">
+                          
+                            i woda 
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            nie zapomnij o wodzie
+
+                          </h2>
+
+                          <div style="margin-bottom: -15px;"></div>
+
+                          <h2 class="custom-heading-3">
+                          
+                            krwi dla ziemi 
+
+                          </h2>
+
+                        <div style="margin-bottom: 15px;"></div>
+                    
+                        <h2 class="custom-heading-4">/październik 2023/</h2>
+                          
+                          <div style="margin-bottom: 20px;"></div>
+                          <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                          
+                        </div>
+                      </div>   
+
+                      <!-- Kafelek 10 -->
+                      <div class="card-image-2">
+                        <a href="#modal10" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/xn556wh.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+
+<!-- Modal -->
+<div id="modal10" class="modal">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+            <i class="material-icons small">zamknij</i>
+        </a>
+    </div>
+
+      <span class="card-title-2">future self</span>
+      <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+      <h2 class="custom-heading-3">
+                          
+        my future self 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        shines in me 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I leave the old skin
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        behind 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I shed
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        the veil of fear 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I shed
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+      the mask of anger 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I am a woman 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        full of myself 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        and in my hair 
+
+      </h2>
+
+      <div style="margin-bottom: 15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        comets spin 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I look in the stars 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        they show me the way
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I dance wildly 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        and I love myself 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I touch my body 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        which sparkles and shines
+
+      </h2>
+
+      <div style="margin-bottom: 15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I dream 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I dream 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I dream  
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I dream 
+
+      </h2>
+
+      <div style="margin-bottom: -15px;"></div>
+
+      <h2 class="custom-heading-3">
+      
+        I dream 
+
+      </h2>
+
+    <div style="margin-bottom: 15px;"></div>
+
+    <h2 class="custom-heading-4">/6.08.2020/</h2>
+      
+      <div style="margin-bottom: 20px;"></div>
+      <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+      
+    </div>
+  </div>   
+
+                    </section>
+                  </div>
+                </div>
+              </div>
+                      
+
+    <div class="section-divider-gradient"></div>
+
+    <div class="container center-align" style="margin-top: 0px;">
+        <a href="poezje.html" class="btn waves-effect waves-light teal">POEZJE</a>
+        <a href="basnie.html" class="btn waves-effect waves-light teal">BAŚNIE</a>
+        <a href="piosenki.html" class="btn waves-effect waves-light teal">PIOSENKI</a>
+      </div>
+
+    <div class="section-divider-gradient"></div>
+
+        <!-- Footer Bottom Section -->
+        <footer class="page-footer custom-footer" style="width: 100vw; position: relative; left: -200px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); background-color: #A9B18E;">
+          <div class="container">
+      
+              <!-- Footer Bottom Section -->
+              <div class="footer-copyright">
+                  <div class="container" style="margin-left: 20px;">
+                      <p class="" style="margin-left: 10px; font-size: 39px; font-weight: bold; color: #6B8E23;">
+                          &copy; <span id="currentYear"></span> Helena Matuszewska. Wszelkie prawa zastrzeżone.
+                      </p>          
+                      <p-2 class="grey-text text-lighten-4" style="font-size: 12px; color: #6B8E23; margin-top: 10px;">
+                          Strona wykonana przez <a href="https://cyberalchemia.pl" style="color: #FFD700; text-decoration: none; font-weight: bold;" onmouseover="this.style.color='#FFA500'" onmouseout="this.style.color='#FFD700'">Cyber Alchemia by Miłosz Sowa</a>.
+                      </p>
+                  </div>
+              </div>
+      
+              <script>
+                  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+              </script>
+      
+          </footer>  
+
+    <div style="margin-bottom: -40px;"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    // Initialize Materialize side navigation for slide in from right
+    $(document).ready(function(){
+        $(".sidenav").sidenav({
+            edge: 'right'  // Set menu to slide in from the right
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Inicjalizacja Sidenav
+        const sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+
+        // Inicjalizacja Dropdown
+        const dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns, {
+            constrainWidth: false, // Dropdown szerokości do kontenera
+            coverTrigger: false // Dropdown nie zakrywa przycisku
+        });
+    });
+</script>
+
+<script>
+    document.querySelectorAll('.dropdown-close').forEach(closeIcon => {
+        closeIcon.addEventListener('click', function () {
+            const dropdownInstance = M.Dropdown.getInstance(
+                document.querySelector('.dropdown-trigger')
+            );
+            dropdownInstance.close();
+        });
+    });
+</script>
+
+<script>
+    const overlay = document.querySelector('.menu-overlay');
+    const dropdownTrigger = document.querySelector('.dropdown-trigger');
+    const dropdownClose = document.querySelectorAll('.dropdown-close');
+
+    // Funkcja pokazująca overlay
+    const showOverlay = () => {
+        overlay.classList.add('active');
+    };
+
+    // Funkcja ukrywająca overlay
+    const hideOverlay = () => {
+        overlay.classList.remove('active');
+    };
+
+    // Obsługa otwierania dropdowna
+    dropdownTrigger.addEventListener('click', showOverlay);
+
+    // Obsługa zamykania dropdowna i ukrycia overlay
+    dropdownClose.forEach(closeButton => {
+        closeButton.addEventListener('click', hideOverlay);
+    });
+
+    // Ukrycie overlay przy kliknięciu w sam overlay
+    overlay.addEventListener('click', hideOverlay);
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  // Inicjalizowanie modalów
+  var elems = document.querySelectorAll('.modal');
+  var instances = M.Modal.init(elems);
+});
+</script>
+
+<script>
+  function toggleSocialIcons() {
+      var screenWidth = window.innerWidth;
+      var socialIcons = document.getElementById('footer-social-icons');
+      if (screenWidth <= 768) {
+          socialIcons.style.display = 'none';  // Ukrywa ikony na urządzeniach mobilnych
+      } else {
+          socialIcons.style.display = 'flex';  // Pokazuje ikony na większych ekranach
+      }
+  }
+
+  // Uruchamia funkcję przy załadowaniu strony
+  window.onload = toggleSocialIcons;
+  // Uruchamia funkcję przy zmianie rozmiaru okna
+  window.onresize = toggleSocialIcons;
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

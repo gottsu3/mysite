@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muzyka artystki, muzyczki i poetki">
+    <title>Muzyka - Artystka Muzyczka Poetka</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div style="margin-bottom: -50px;"></div>
+    
+    <nav class="navbar" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);">
+        <div class="nav-wrapper important">
+            <a href="index.html" class="brand-logo left">
+                <img src="https://cdn-icons-png.flaticon.com/256/6583/6583566.png" width="40" class="logo-image">
+            </a>
+            
+            <!-- Fullscreen Menu (hidden in mobile) -->
+            <ul class="fullscreen-menu right">
+                <li><a href="sishnu.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">SISHNU</a></li>
+            
+                <li class="dropdown">
+                    <a href="muzyka.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">MUZYKA</a>
+                    <ul class="dropdown-menu center">
+                        <li><a href="mojamuzyka.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>MUZYKA</b></a></li>
+                        <li><a href="wspolpraca.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>WSPÓŁPRACA</b></a></li>
+                        <li><a href="realizacje.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>REALIZACJE</b></a></li>
+                    </ul>
+                </li>
+            
+                <li class="dropdown">
+                    <a href="pisanie.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">PISANIE</a>
+                    <ul class="dropdown-menu center">
+                        <li><a href="poezje.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>POEZJE</b></a></li>
+                        <li><a href="basnie.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>BAŚNIE</b></a></li>
+                        <li><a href="piosenki.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''"><b>PIOSENKI</b></a></li>
+                    </ul>
+                </li>
+            
+                <li class="dropdown">
+                    <a href="kontakt.html" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.5); font-weight: bold; transition: color 1s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''">KONTAKT</a>
+                </li>
+            </ul>
+            
+<!-- Sekcja ikon społecznościowych -->
+<div class="footer-social" style="text-align: center; margin-top: 20px; padding-bottom: 20px;">
+    <div id="footer-social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; margin-left: 100px; margin-top: -5px;">
+        <a href="https://www.instagram.com/_._.sishnu._._/?locale=my&hl=en" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" width="32" height="32" style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <a href="https://www.facebook.com/sishnumusic" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Facebook" width="32" height="32" style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <a href="https://www.facebook.com/vennasana.artofwords" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Behance" width="32" height="32" style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <a href="https://www.youtube.com/@sishnumusic" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="32" height="32" style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <a href="https://open.spotify.com/artist/5VHvn3qi6B4fIR8emfx7ui?si=QaN9hD8MQQ2vahN7U4e3dA" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png" alt="Spotify" width="32" height="32" style="filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+    </div>
+</div>
+
+            <!-- Hamburger menu trigger for mobile -->
+            <div class="menu-wrapper">
+                <button data-target="slide-out-right" class="sidenav-trigger" aria-label="Menu">
+                    Menu ☰
+                </button>
+            </div>  
+    
+        <!-- Collapsible menu for mobile (Slide In from Right) -->
+
+        <ul class="sidenav right-aligned" id="slide-out-right">
+            <li>
+                <div class="collapsible-header">Menu
+                    <a href="#" class="sidenav-close" style="margin-left: auto;">
+                        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png" alt="Zamknij menu" style="width: 35px; height: 35px; margin-top: 15px;">
+                    </a>
+                </div>
+                <ul id="slide-out" class="collapsible">
+                    <!-- Linki standardowe -->
+                    <li><a href="sishnu.html" class="close-menu shadow-effect"><b>SISHNU</b></a></li>
+                    
+                    <!-- Dropdown dla Muzyka -->
+                    <li>
+                        <div class="dropdown-header" style="display: flex; align-items: center;">
+                            <a href="muzyka.html" class="close-menu shadow-effect">
+                                <b>MUZYKA</b>
+                            </a>
+                            <a href="#!" class="dropdown-trigger" data-target="muzyka-dropdown" style="margin-left: 10px; margin-top: 5px;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Rozwiń" style="width: 15px; height: 15px;">
+                            </a>
+                        </div>
+                        <ul id="muzyka-dropdown" class="dropdown-content">
+                            <!-- Przycisk zamknięcia -->
+                            <li>
+                                <a href="#!" class="dropdown-close">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/458/458595.png" alt="Zamknij" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                                </a>
+                            </li>
+                            <li><a href="mojamuzyka.html" class="close-menu shadow-effect"><b>MUZYKA</b></a></li>
+                            <li><a href="wspolpraca.html" class="close-menu shadow-effect"><b>WSPÓŁPRACA</b></a></li>
+                            <li><a href="realizacje.html" class="close-menu shadow-effect"><b>REALIZACJE</b></a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Dropdown dla Pisanie -->
+                    <li>
+                        <div class="dropdown-header" style="display: flex; align-items: center;">
+                            <a href="pisanie.html" class="close-menu shadow-effect">
+                                <b>PISANIE</b>
+                            </a>
+                            <a href="#!" class="dropdown-trigger" data-target="pisanie-dropdown" style="margin-left: 10px; margin-top: 5px;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="Rozwiń" style="width: 15px; height: 15px;">
+                            </a>
+                        </div>
+                        <ul id="pisanie-dropdown" class="dropdown-content">
+                            <!-- Przycisk zamknięcia -->
+                            <li>
+                                <a href="#!" class="dropdown-close">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/458/458595.png" alt="Zamknij" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                                </a>
+                            </li>
+                            <li><a href="poezje.html" class="close-menu shadow-effect"><b>POEZJE</b></a></li>
+                            <li><a href="basnie.html" class="close-menu shadow-effect"><b>BAŚNIE</b></a></li>
+                            <li><a href="piosenki.html" class="close-menu shadow-effect"><b>PIOSENKI</b></a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Dropdown dla Aspenzibar -->
+                    <li>
+                        <div class="dropdown-header" style="display: flex; align-items: center;">
+                            <a href="kontakt.html" class="close-menu shadow-effect">
+                                <b>KONTAKT</b>
+                            </a>
+                        </div>
+                    </li>              
+                </ul>
+            </li>
+        
+            <div class="footer-social">
+                <div class="social-icons">
+                    <!-- Górny rząd (3 ikony) -->
+                    <div class="social-row">
+                        <a href="https://www.instagram.com/_._.sishnu._._/?locale=my&hl=en" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/sishnumusic" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.facebook.com/vennasana.artofwords" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png" alt="Behance">
+                        </a>
+                    </div>
+        
+                    <!-- Dolny rząd (2 ikony) -->
+                    <div class="social-row">
+                        <a href="https://www.youtube.com/@sishnumusic" target="_blank">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+                        </a>
+                        <a href="https://open.spotify.com/artist/5VHvn3qi6B4fIR8emfx7ui?si=QaN9hD8MQQ2vahN7U4e3dA" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png" alt="Spotify">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        </ul>
+        
+        
+    </nav>
+
+    <header class="hero-6">
+        <div class="container">
+            <div class="hero-content">
+                <h1><b>MOJA MUZYKA</b></h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-divider-gradient"></div>
+
+    <section id="about" class="section custom-2-section fade-in" style="display: flex; justify-content: center;">
+        <div class="container custom-2-container">
+            <!-- Karta Albumy -->
+            <div class="card hoverable custom-2-card" style="margin-bottom: 20px;">
+                <div class="card-content custom-2-card-content">
+                    <div class="custom-2-link-grid" style="display: flex; flex-direction: column; align-items: center;">
+                        <a href="" target="_blank" class="custom-2-link-card"
+                           style="width: 350px; height: 150px; display: flex; align-items: center; justify-content: space-between; text-align: center; background: linear-gradient(135deg, #6B8E23, #3C4E36); border-radius: 15px; text-decoration: none; color: #FFF; transition: transform 0.3s, box-shadow 0.3s;">
+                            <div class="responsive-circle">
+                                <div style="width: 15vw; height: 15vw; max-width: 80px; max-height: 80px; background-image: url('https://i.imgur.com/SLS0bOm.jpeg'); background-size: cover; background-position: center; border-radius: 50%; margin-right: 15px;"></div>
+                            </div>
+                            <div class="custom-2-link-content" style="flex-grow: 1; text-align: left;">
+                                <div style="margin-top: -25px;"></div>
+                                <h3 style="font-size: 32px;"><b>ALBUMY</b></h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Kafelki i Modal -->
+            <div class="card hoverable custom-2-card" style="margin-bottom: 20px;">
+                <div class="card-content custom-2-card-content">
+                    <div class="custom-2-link-grid" style="display: flex; flex-direction: column; align-items: center;">
+    
+                        <!-- Kafelek 1 -->
+                        <div class="card-image-2">
+                        <a href="#modal4" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/WNCMYIt.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+    
+                        <!-- Modal 4 -->
+                        <div id="modal4" class="modal">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                        <i class="material-icons small">zamknij</i>
+                                    </a>
+                                </div>
+
+                                <span class="card-title-2">ZARYSY / MUZYKA O TĘSKNOCIE ZA GÓRAMI</span>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                <h2 class="custom-heading"><i>album etnorenesansowy</i></h2>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                <h2 class="custom-heading">Muzyczna opowieść o tęsknocie za górami, o opuszczaniu rodzinnych stron i
+                                    ciągłym powracaniu. Podróż po zarysach pamięci, wspomnieniach
+                                    z dzieciństwa, zasnutych echem, ciszą, mgłą i snami.</h2>
+
+                                    <div style="margin-bottom: 15px;"></div>
+
+                                    <h2 class="custom-heading">Jako młoda dziewczyna wyjechałam do miasta &quot;za muzyką&quot;, nosząc w swoim
+                                    sercu zarysy dni i nocy spędzanych w lasach, na łąkach i wierchach. Po
+                                    latach wróciłam i zamieszkałam w tym samym domu, żeby snuć swoją
+                                    opowieść o górach już jako dorosła kobieta.</h2>
+
+                                    <div style="margin-bottom: 15px;"></div>
+
+                                    <h2 class="custom-heading">Album Zarysy jest inspirowany echami tradycyjnych melodii góralskich.
+                                        Etnorenesansowe trio jest nawiązaniem do góralskiej kapeli z tamtych
+                                        czasów w składzie prym, sekund i bas. W Zarysach zamiast dwojga skrzypiec
+                                        i góralskich basów słychać złóbcoki d’amore lub sukę biłgorajską (Helena
+                                        Matuszewska), violę d’amore lub złóbcoki (Marta Piórkowska) oraz violę da
+                                        gamba (Paweł Zalewski).</h2>
+
+                                        <div style="margin-bottom: 15px;"></div>
+
+                                        <h2 class="custom-heading">Pierwszą taką kapelę, czyli po góralsku „muzykę&quot; założył słynny na Podhalu
+                                            muzyczny rewolucjonista - Bartuś Obrochta. Melodie grane przez kapelę
+                                            Obrochty spisał na początku XX wieku Stanisław Mierczyński, etnomuzykolog
+                                            zakochany w Tatrach, góralach i ich muzyce.</h2>
+
+                                            <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                                            <h2 class="custom-heading-1"><i>music:</i> Sishnu
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>performing:</i> Helena Matuszewska (suka biłgorajska, złóbcoki d’amore, głos) /
+                                                Marta Piórkowska (viola d’amore, złóbcoki) / Paweł Zalewski (viola da
+                                                gamba)
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>recording:</i> <a href="https://www.facebook.com/KSNF1" target="_blank">Studio Inżynierska</a>
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>mix &amp; master:</i> <a href="https://www.facebook.com/marcin.witkowski.9883739" target="_blank">Marcin Witkowski</a>
+                                            </h2>
+
+                                            <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                        <li style="list-style: none;">
+                            <a href="https://www.youtube.com/" target="_blank" class="waves-effect waves-light" 
+                               style="display: flex; align-items: center; justify-content: center; text-decoration: none; width: 100%; padding: 10px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" 
+                                     alt="YouTube" style="width: 50px; margin-right: 8px;">
+                                <span>YouTube</span>
+                            </a>
+                        </li>
+                    
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                <div class="video" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                                    <iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/5AInePqtO48"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div style="margin-bottom: 20px;"></div>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                            </div>
+                        </div>
+
+                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+    
+                        <!-- Kafelek 2 -->
+
+                        <div class="card-image-2">
+                        <a href="#modal5" class="modal-trigger" style="margin-bottom: 15px;">
+                            <img src="https://i.imgur.com/AAwK6XY.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                        </a>
+                    </div>
+    
+                        <!-- Modal 5 -->
+                        <div id="modal5" class="modal">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                        <i class="material-icons small">zamknij</i>
+                                    </a>
+                                </div>
+
+                                <span class="card-title-2">WILD MONASTYR</span>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                <h2 class="custom-heading"><i>album kosmiczny</i></h2>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                <h2 class="custom-heading">Na brzegu wioski stoi stara drewniana chałupa, w której mieszka szeptucha,
+                                    mądra baba, mistyczka, artystka, ta która widzi, czuje i wie.
+                                    Ta która śpiewa pieśni spadających gwiazd, płonących szybko sierpniowych
+                                    meteorów, tańczących warkoczy komet na północnym niebie. Ta która snuje
+                                    wątki i przeplata ścieżki na skrzyżowaniu z drogą umartych.</h2>
+
+                                    <div style="margin-bottom: 15px;"></div>
+
+                                    <h2 class="custom-heading">Album Wild Monastyr to opowieści z trzech lat cywilizacyjnej vipassany.
+                                        Z introwertycznej i bardzo osobistej podróży po historiach ze świata ciszy,
+                                        gwieździstego nieba, przodkiń w ciemnozielonych szumiących lasach
+                                        i lodowatych górskich rzekach. Opowieści ze światła i z ciemności,
+                                        ze świata środka.</h2>
+
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                                <h2 class="custom-heading-1"><i>music &amp; performing:</i> Sishnu (wokale, rebab turecki, chordofon płocki, suka biłgorajska, wiolonczela,
+                                    złóbcoki, grzechotki, bębny, kaosilator)
+
+                                    <div style="margin-bottom: 15px;"></div>
+
+                                    <i>recording:</i> Sishnu
+
+                                    <div style="margin-bottom: 15px;"></div>
+
+                                    <i>mix & master:</i> Tomasz Śliwka
+
+                                    <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                                    <li style="list-style: none;">
+                                        <a href="https://www.youtube.com/" target="_blank" class="waves-effect waves-light" 
+                                           style="display: flex; align-items: center; justify-content: center; text-decoration: none; width: 100%; padding: 10px;">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" 
+                                                 alt="YouTube" style="width: 50px; margin-right: 8px;">
+                                            <span>YouTube</span>
+                                        </a>
+                                    </li>
+
+                                    <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                
+                                    <div class="video" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                                    <iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/f1srf6twWIg"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <div style="margin-bottom: 20px;"></div>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="about" class="section custom-2-section fade-in" style="display: flex; justify-content: center;">
+        <div class="container custom-2-container">
+            <div class="card hoverable custom-2-card">
+                <div class="card-content custom-2-card-content">
+                    <div class="custom-2-link-grid" style="display: flex; flex-direction: column; align-items: center;">
+    
+                        <!-- Kafelek -->
+                        <a href="" target="_blank" class="custom-2-link-card"
+                           style="width: 350px; height: 150px; display: flex; align-items: center; justify-content: space-between; text-align: center; background: linear-gradient(135deg, #6B8E23, #3C4E36); border-radius: 15px; text-decoration: none; color: #FFF; transition: transform 0.3s, box-shadow 0.3s;">
+                            <div class="responsive-circle">
+                                <div style="width: 15vw; height: 15vw; max-width: 80px; max-height: 80px; background-image: url('https://i.imgur.com/SLS0bOm.jpeg'); background-size: cover; background-position: center; border-radius: 50%; margin-right: 15px;"></div>
+                            </div>
+                            <div class="custom-2-link-content" style="flex-grow: 1; text-align: left;">
+                                
+                                <div style="margin-top: -25px;"></div>
+                                
+                                <h3 style="font-size: 32px;"><b>SINGLE</b></h3>
+                            </div>
+                        </a>
+
+                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+    
+                        <!-- Obrazek pod kafelkiem -->
+
+                        <div class="card-image-2">
+                            <a href="#modal6" class="modal-trigger" style="margin-bottom: 15px;">
+                                <img src="https://i.imgur.com/0Uju6PT.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                            </a>
+                        </div>
+
+                        <div id="modal6" class="modal">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                        <i class="material-icons small">zamknij</i>
+                                    </a>
+                                </div>
+
+                                <span class="card-title-2">HEXEN VESSE / ZIPS FANTASIE FUR GUSLE MIT LOOPER UND BAS</span>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                <h2 class="custom-heading">Live act na złóbcoki (starodawne góralskie gęśle) z looperem i basem.
+                                    Nagrany z Kwazarem (bas) w zimowy dzień na szczycie spiskiej góry, która
+                                    tonęła w chmurze gęstej jak mleko.</h2>
+
+                                    <div style="margin-bottom: 15px;"></div>
+
+                                    <h2 class="custom-heading">Ludzie wędrowali od zawsze. Osiedlali się na chwilę zapuszczając korzenie,
+                                        które jakaś większa siła dziejowa wyrywała jak chwasty. W tej tułaczce
+                                        zawsze szukali siły wyższej - bogów, magii, ziół, odmiennych stanów
+                                        świadomości, szamanów…</h2>
+
+                                    <div style="margin-bottom: 15px;"></div>
+
+                                    <h2 class="custom-heading">Zanim powstała tożsamość narodowa ludzie ze Spisza byli po prostu… stąd.
+                                        Nieważne w co wierzyli, w jakim języku mówili, jakie obchodzili święta.
+                                        Najstarsze ślady człowieka na Spiszu pochodzą z Paleolitu. Większość nazw
+                                        jest pozostałością po osadnikach niemieckich jeszcze z XIII wieku,
+                                        którzy zasiedlili Zips zaraz po najazdach tatarskich. Po całych stuleciach
+                                        ich obecności - teraz są niewielką mniejszością. Muzyka, stroje, pasterstwo,
+                                        łokolicna łobora przyszły i zostały na Spiszu razem z plemionami wołoskimi.
+                                        Mieszkało tu sporo Żydów, po których nie ma nawet śladu. Może oprócz
+                                        szabaśnika w tradycyjnym piecu spiskim w moim starym domu.
+                                        Polacy, Węgrzy, Niemcy, Łemkowie, Słowacy, Romowie.
+                                        Ludzie z Sudetów, Saksonii, Orawy, Białych Karpat, Rumunii.
+                                        Wędrowcy z bliskich i dalekich krain.
+                                        Tygiel Kultur.
+                                        Naczynie Czarownicy.
+                                        Hexen Vesse.</h2>
+
+                                        <div style="margin-bottom: 15px;"></div>
+
+                                            <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                                            <h2 class="custom-heading-1"><i>music:</i> Sishnu
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>performing:</i> Sishnu (złóbcoki, looper) &amp; Kwazar (bas)
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>recording &amp; mix &amp; master:</i> <a href="https://open.spotify.com/artist/6bKZzall3GjAUBbiY2pxbF?si=tbuU5nYCQ4WJe1oiTLWKdA&nd=1&dlsi=8e766fd1d4564251" target="_blank">KWAZAR</a> / Bazarec Studio
+                                                
+                                            </h2>
+
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                
+                                <li style="list-style: none;">
+                                    <a href="https://www.spotify.com/" target="_blank" class="waves-effect waves-light" 
+                                       style="display: flex; align-items: center; justify-content: center; text-decoration: none; width: 100%; padding: 10px;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" 
+                                             alt="Spotify" style="width: 50px; margin-right: 8px;">
+                                        <span>Spotify</span>
+                                    </a>
+                                </li>
+                                
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                                <div class="card-image-2">
+                                    <a href="https://open.spotify.com/album/6yL4LxdrLDD3SFMwpjTSDC?si=YCffI5UyRHSHhX5s2eCa
+                                    XQ" target="_blank">
+                                        <img src="https://i.imgur.com/0Uju6PT.jpeg" alt="Obrazek">
+                                    </a>
+                                </div>
+                                    
+                                <div style="margin-bottom: 20px;"></div>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                            </div>
+                        </div>
+
+                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                        <div class="card-image-2">
+                            <a href="#modal7" class="modal-trigger" style="margin-bottom: 15px;">
+                                <img src="https://i.imgur.com/Ef2flJo.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                            </a>
+                        </div>
+
+                        <div id="modal7" class="modal">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                        <i class="material-icons small">zamknij</i>
+                                    </a>
+                                </div>
+
+                                <span class="card-title-2">SZARA MYSZA</span>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                <h2 class="custom-heading">Na okładce jestem sześcioletnia ja na wykopach. Sześcioletnia Sishnu.
+                                    Pamiętam te czerwone dresiki i te korale różowe. Koniecznie chciałam
+                                    je wtedy na wykopki założyć, czułam się w nich wyjątkowo, a to był wyjątkowy
+                                    dzień. Pamiętam ognisko, ziemniaki prosto z pola wrzucane do żaru, kiełbasę
+                                    na patyku i mnóstwo śmiechu.
+                                    I dobrze pamiętam z dzieciństwa biedę, która zawsze czaiła się gdzieś za
+                                    rogiem mojego domu. Wtedy miałam plastikowe różowe korale, dzisiaj mam
+                                    różowe futro. I dziczeję oswajając biedę z dzieciństwa.
+                                    Bo życie na wsi, w starym drewnianym domu to kiedyś było klepanie biedy.
+                                    Można się było na nią wściekać, ale bieda jest jak Buka z Muminków -
+                                    im bardziej się jej boisz, tym bardziej czai się w mroku.
+                                    No to zaczęłam ją klepać czule. Słuchać siebie.
+                                    Patrzeć co mi ta bieda chce pokazać.
+                                    I słucham nadal. I śpiewam. I gram. Aż tyle mam.</h2>
+
+                                        <div style="margin-bottom: 15px;"></div>
+
+                                            <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                                            <h2 class="custom-heading-1"><i>music:</i> Sishnu
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>performing:</i> Sishnu (wokale, głosy, gitarra, klaski) / Antonio (chórki) / Kwazar
+                                                (klaski)
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>recording:</i> Sishnu
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>mix &amp; master:</i> <a href="https://open.spotify.com/artist/6bKZzall3GjAUBbiY2pxbF?si=tbuU5nYCQ4WJe1oiTLWKdA&nd=1&dlsi=8e766fd1d4564251" target="_blank">KWAZAR</a> / Bazarec Studio
+                                                
+                                            </h2>
+
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                
+                                <li style="list-style: none;">
+                                    <a href="https://www.spotify.com/" target="_blank" class="waves-effect waves-light" 
+                                       style="display: flex; align-items: center; justify-content: center; text-decoration: none; width: 100%; padding: 10px;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" 
+                                             alt="Spotify" style="width: 50px; margin-right: 8px;">
+                                        <span>Spotify</span>
+                                    </a>
+                                </li>
+                                
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                                <div class="card-image-2">
+                                    <a href="https://open.spotify.com/album/6yL4LxdrLDD3SFMwpjTSDC?si=YCffI5UyRHSHhX5s2eCa
+                                    XQ" target="_blank">
+                                        <img src="https://i.imgur.com/Ef2flJo.jpeg" alt="Obrazek">
+                                    </a>
+                                </div>
+
+                                <div style="margin-bottom: 20px;"></div>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Zamknij</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                                <div class="card-image-2">
+                                    <a href="#modal8" class="modal-trigger" style="margin-bottom: 15px;">
+                                        <img src="https://i.imgur.com/y0k9fgA.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                                    </a>
+                                </div>
+
+                                <div id="modal8" class="modal">
+                                    <div class="modal-content">
+                                        <span class="card-title-2">LULLABIES FOR ANCESTORS - SAHRA</span>
+                                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                        <h2 class="custom-heading"><i>Dwie muzyczno-wizualne baśnie z pogranicza światów, śpiewane
+                                            w pokłonie dla moich przodkiń. Krótkie i minimalistyczne.
+                                            Dźwiękowe chmury, które przepływają przez świat jak kołysanki naszych babć.</i></h2>
+                                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                        <h2 class="custom-heading"></h2>
+        
+                                            <div style="margin-bottom: 15px;"></div>
+        
+                                            <h2 class="custom-heading">Kołysanka o Czerwieni, kolorze Kobiecej Mocy.
+                                                Opowieść o Zażegnywaczce, czyli Tańczącej z Chmurami, która ma moc
+                                                wpływania na pogodę. Zaczyna się na śnieżnej pustyni w najdłuższą noc w
+                                                roku i jest kołysanką dla moich przodkiń po mieczu. Widzę i słyszę Wasze
+                                                historie, które krążą we mnie i które tańczę w polu - tęsknotę pustyni,
+                                                tęsknotę dzikiej mocy, tęsknotę serca.</h2>
+        
+                                            <div style="margin-bottom: 15px;"></div>
+        
+                                            <h2 class="custom-heading">Gram w niej na chordofonie płockim, polskim instrumencie tradycyjnym,
+                                                zbudowanym na początku pandemii wspólnie z Hubertem Połoniewiczem w
+                                                jego pracowni instrumentów <b>Huba - Singing Trees</b>.Instrument
+                                                zbudowaliśmy wspólnie w ramach stypendium Narodowego Instytutu Muzyki i
+                                                Tańca.</h2>
+        
+                                                <div style="margin-bottom: 15px;"></div>
+        
+                                                    <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+        
+                                                    <h2 class="custom-heading-1"><i>music & performing:</i> Sishnu (chordofon płocki)
+        
+                                                        <div style="margin-bottom: 15px;"></div>
+        
+                                                        <i>video:</i> Sishnu
+        
+                                                        <div style="margin-bottom: 15px;"></div>
+
+                                                        <i>camera:</i> Hrabia von Vishnu
+
+                                                        <div style="margin-bottom: 15px;"></div>
+
+                                                        <i>choreografy:</i> Sishnu, chmury, wiatr, brzoza
+
+                                                        <div style="margin-bottom: 15px;"></div>
+        
+                                                        <i>recording:</i> Sishnu
+
+                                                        <div style="margin-bottom: 15px;"></div>
+
+                                                        <i>mix &amp; master:</i> <a href="https://www.facebook.com/marcin.witkowski.9883739" target="_blank">Marcin Witkowski <a href="https://www.facebook.com/KSNF1" target="_blank">/ Studio Inżynierska</a>
+                                                        
+                                                    </h2>
+        
+                                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                        
+                                        <li style="list-style: none;">
+                                            <a href="https://www.spotify.com/" target="_blank" class="waves-effect waves-light" 
+                                               style="display: flex; align-items: center; justify-content: center; text-decoration: none; width: 100%; padding: 10px;">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" 
+                                                     alt="Spotify" style="width: 50px; margin-right: 8px;">
+                                                <span>Spotify</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+        
+                                        <div class="card-image-2">
+                                            <a href="https://open.spotify.com/track/3Y6rIi0Hg1EkakBWJBvjhK?si=33aa768d073c44c1" target="_blank">
+                                                <img src="https://i.imgur.com/y0k9fgA.jpeg" alt="Obrazek">
+                                            </a>
+                                        </div>
+                                    
+                                <div style="margin-bottom: 20px;"></div>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                            </div>
+                        </div>
+
+                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                        <div class="card-image-2">
+                            <a href="#modal9" class="modal-trigger" style="margin-bottom: 15px;">
+                                <img src="https://i.imgur.com/2rmVmhN.jpeg" alt="Obrazek" style="max-width: 100%; border-radius: 15px;">
+                            </a>
+                        </div>
+
+                        <div id="modal9" class="modal">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat close-btn">
+                                        <i class="material-icons small">zamknij</i>
+                                    </a>
+                                </div>
+
+                                <span class="card-title-2">LULLABIES FOR ANCESTORS - DOULA</span>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                <h2 class="custom-heading"><i>Kołysanka o Bieli, kolorze kobiecej Niewinności.
+                                    Opowieść o Douli, która opiekuje się kobietami w ciąży i towarzyszy
+                                    porodom. Zaczyna się pomiędzy ostatnią nocą zimy, a pierwszym dniem
+                                    wiosny i jest kołysanką dla moich przodkiń po kądzieli, którym składam czuły
+                                    pokłon. Widzę i słyszę Wasze historie, które krążą we mnie i które tańczę w
+                                    ciszy - moc kreacji, moc dawania życia.</i></h2>
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                <h2 class="custom-heading"></h2>
+
+                                            <h2 class="custom-heading-1"><i>music & performing:</i> Sishnu
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>video:</i> Sishnu
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>choreografy:</i> Sishnu, przestrzeń, trawy, jodła
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>recording:</i> Sishnu
+
+                                                <div style="margin-bottom: 15px;"></div>
+
+                                                <i>mix &amp; master:</i> <a href="https://www.facebook.com/marcin.witkowski.9883739" target="_blank">Marcin Witkowski <a href="https://www.facebook.com/KSNF1" target="_blank"> / Studio Inżynierska</a>
+                                                
+                                            </h2>
+
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                                
+                                <li style="list-style: none;">
+                                    <a href="https://www.spotify.com/" target="_blank" class="waves-effect waves-light" 
+                                       style="display: flex; align-items: center; justify-content: center; text-decoration: none; width: 100%; padding: 10px;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" 
+                                             alt="Spotify" style="width: 50px; margin-right: 8px;">
+                                        <span>Spotify</span>
+                                    </a>
+                                </li>
+                                
+                                <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+
+                                <div class="card-image-2">
+                                    <a href="https://open.spotify.com/track/5FDEYbnQ9kfwzPKuaEsPXt?si=79e68ba067e649f4" target="_blank">
+                                        <img src="https://i.imgur.com/2rmVmhN.jpeg" alt="Obrazek">
+                                    </a>
+                                </div>
+                            
+                        <div style="margin-bottom: 20px;"></div>
+                        <hr style="border-top: 1px solid #d3cacc; width: 30%; margin: 16px auto;">
+                    </div>
+                </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="section-divider-gradient"></div>
+
+    <div class="container center-align" style="margin-top: 0px;">
+        <a href="mojamuzyka.html" class="btn waves-effect waves-light teal">MOJA MUZYKA</a>
+        <a href="wspolpraca.html" class="btn waves-effect waves-light teal">WSPÓŁPRACA</a>
+        <a href="realizacje.html" class="btn waves-effect waves-light teal">REALIZACJE KOMPOZYTORSKIE</a>
+      </div>
+
+    <div class="section-divider-gradient"></div>
+
+    <footer class="page-footer custom-footer" style="box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); background-color: #A9B18E;">
+        <div class="container">
+    
+            <!-- Footer Bottom Section -->
+            <div class="footer-copyright">
+                <div class="container" style="margin-left: 20px;">
+                    <p class="" style="margin-left: 10px; font-size: 39px; font-weight: bold; color: #6B8E23;">
+                        &copy; <span id="currentYear"></span> Helena Matuszewska. Wszelkie prawa zastrzeżone.
+                    </p>          
+                    <p-2 class="grey-text text-lighten-4" style="font-size: 12px; color: #6B8E23; margin-top: 10px;">
+                        Strona wykonana przez <a href="https://cyberalchemia.pl" style="color: #FFD700; text-decoration: none; font-weight: bold;" onmouseover="this.style.color='#FFA500'" onmouseout="this.style.color='#FFD700'">Cyber Alchemia by Miłosz Sowa</a>.
+                    </p>
+                </div>
+            </div>
+    
+            <script>
+                document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+            </script>
+    
+        </footer>  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    // Initialize Materialize side navigation for slide in from right
+    $(document).ready(function(){
+        $(".sidenav").sidenav({
+            edge: 'right'  // Set menu to slide in from the right
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Inicjalizacja Sidenav
+        const sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+
+        // Inicjalizacja Dropdown
+        const dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns, {
+            constrainWidth: false, // Dropdown szerokości do kontenera
+            coverTrigger: false // Dropdown nie zakrywa przycisku
+        });
+    });
+</script>
+
+<script>
+    document.querySelectorAll('.dropdown-close').forEach(closeIcon => {
+        closeIcon.addEventListener('click', function () {
+            const dropdownInstance = M.Dropdown.getInstance(
+                document.querySelector('.dropdown-trigger')
+            );
+            dropdownInstance.close();
+        });
+    });
+</script>
+
+<script>
+    const overlay = document.querySelector('.menu-overlay');
+    const dropdownTrigger = document.querySelector('.dropdown-trigger');
+    const dropdownClose = document.querySelectorAll('.dropdown-close');
+
+    // Funkcja pokazująca overlay
+    const showOverlay = () => {
+        overlay.classList.add('active');
+    };
+
+    // Funkcja ukrywająca overlay
+    const hideOverlay = () => {
+        overlay.classList.remove('active');
+    };
+
+    // Obsługa otwierania dropdowna
+    dropdownTrigger.addEventListener('click', showOverlay);
+
+    // Obsługa zamykania dropdowna i ukrycia overlay
+    dropdownClose.forEach(closeButton => {
+        closeButton.addEventListener('click', hideOverlay);
+    });
+
+    // Ukrycie overlay przy kliknięciu w sam overlay
+    overlay.addEventListener('click', hideOverlay);
+</script>
+
+<script>
+ $(document).ready(function(){
+        $('.modal').modal(); // Inicjalizacja modalu
+    });
+</script>
+
+<script>
+    function toggleSocialIcons() {
+        var screenWidth = window.innerWidth;
+        var socialIcons = document.getElementById('footer-social-icons');
+        if (screenWidth <= 768) {
+            socialIcons.style.display = 'none';  // Ukrywa ikony na urządzeniach mobilnych
+        } else {
+            socialIcons.style.display = 'flex';  // Pokazuje ikony na większych ekranach
+        }
+    }
+
+    // Uruchamia funkcję przy załadowaniu strony
+    window.onload = toggleSocialIcons;
+    // Uruchamia funkcję przy zmianie rozmiaru okna
+    window.onresize = toggleSocialIcons;
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
